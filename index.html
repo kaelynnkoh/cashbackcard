@@ -203,15 +203,15 @@
 
   <section class="mb-5">
     <h2 class="section-title">Personal Cashback Calculator</h2>
-    <p>Disclaimer: The Cashback Calculator does not take into account tiered rates for different spending and categorizes some category with many assumptions (eg. some cards have specific merchants and not applicable to broad category)</p>
+    <p>Disclaimer: The Cashback Calculator does not take into account tiered rates for different spending and categorizes some category with many assumptions (eg. some cards have specific merchants and not applicable to broad category). For example, SC Smart has very specific merchants.</p>
     <form class="row g-3">
       <div class="col-md-3">
         <label for="petrol" class="form-label">Petrol</label>
-        <input type="number" id="petrol" class="form-control" value="200">
+        <input type="number" id="petrol" class="form-control" value="50">
       </div>
       <div class="col-md-3">
         <label for="petrol" class="form-label">Transport</label>
-        <input type="number" id="transport" class="form-control" value="200">
+        <input type="number" id="transport" class="form-control" value="150">
       </div>
       <div class="col-md-3">
         <label for="dining" class="form-label">Dining / Delivery</label>
@@ -219,11 +219,11 @@
       </div>
       <div class="col-md-3">
         <label for="groceries" class="form-label">Groceries</label>
-        <input type="number" id="groceries" class="form-control" value="300">
+        <input type="number" id="groceries" class="form-control" value="200">
       </div>
       <div class="col-md-3">
         <label for="others" class="form-label">Others</label>
-        <input type="number" id="others" class="form-control" value="200">
+        <input type="number" id="others" class="form-control" value="100">
       </div>
       <div class="col-12">
         <button type="button" class="btn btn-success mt-2" onclick="compare()">Compare Cashback</button>
@@ -248,7 +248,7 @@
     {name:'HSBC Live+', rates:{petrol:0.05,transport:0.05,dining:0.05,groceries:0.0,others:0.05}, min:600, cap:250/3}, // Monthly cap of ~83.33
     {name:'OCBC Infinity', rates:{petrol:0.016,transport:0,dining:0.016,groceries:0.016,others:0.016}, min:0, cap:Infinity},
     {name:'CIMB World', rates:{petrol:0.01,transport: 0.01,dining:0.01,groceries:0.01,others:0.01}, min:500, cap:Infinity},
-    {name:'SC Smart', rates:{petrol:0,transport:0.08, dining:0.08,groceries:0.8,others:0}, min:800, cap:Infinity},
+    {name:'SC Smart', rates:{petrol:0,transport:0.08, dining:0.08,groceries:0.08,others:0}, min:800, cap:Infinity},
     {name:'HSBC Advance', rates:{petrol:0.015,dining:0.015,transport:0.015,groceries:0.015,others:0.015}, min:0, cap:70},
     {name:'UOB EVOL', rates:{petrol:0,dining:0.1,transport:0,groceries:0,others:0.1}, min:800, cap:80},
     {name:'POSB Everyday', rates:{petrol:0.06,dining:0.05,transport:0.05,groceries:0.05,others:0.003}, min:800, cap:55},
